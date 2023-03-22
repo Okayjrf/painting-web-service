@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Bond Web Service Demo</title>
+<title>Paintings Web Service</title>
 <style>
 	body {font-family:georgia;}
   .film{
@@ -30,16 +30,10 @@
 function bondTemplate(film){
   return `
   <div class = "film">
-        <b>Film</b>: ${film.Film}<br>
-        <b>Title</b>: ${film.Title}<br>
-        <b>Year</b>: ${film.Year}<br>
-        <b>Director</b>: ${film.Director}<br>
-        <b>Producers</b>: ${film.Producers}<br>
-        <b>Writers</b>: ${film.Writers}<br>
-        <b>Composer</b>: ${film.Composer}<br>
-        <b>Bond</b>: ${film.Bond}<br>
-        <b>Budget</b>: ${film.Budget}<br>
-        <b>Box Office</b>: ${film.BoxOffice}<br>
+        <b>Title</b>: ${film.Film}<br>
+        <b>Artist</b>: ${film.Title}<br>
+        <b>Cost</b>: ${film.Year}<br>
+        <b>Note</b>: ${film.Director}<br>
         <div class ="pic"><img src="thumbnails/${film.Image}"></div>
   </div>
   `;
